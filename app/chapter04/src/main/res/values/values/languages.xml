@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>1808042</item>
+        <item>1808041</item>
+        <item>1808011</item>
+        <item>1808012</item>
+    </string-array>
+</resources>

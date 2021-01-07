@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app/activitylife" />
+            <option value="$PROJECT_DIR$/app/chapter04" />
+            <option value="$PROJECT_DIR$/app/chapter04/java_android" />
+            <option value="$PROJECT_DIR$/app/fragment" />
+            <option value="$PROJECT_DIR$/app/intentdemp" />
+            <option value="$PROJECT_DIR$/app/javatoandroid" />
+            <option value="$PROJECT_DIR$/app/menu" />
+            <option value="$PROJECT_DIR$/app/menudemo" />
+            <option value="$PROJECT_DIR$/app/myapplicationc" />
+            <option value="$PROJECT_DIR$/app/networkdemo" />
+            <option value="$PROJECT_DIR$/app/storedemo" />
+            <option value="$PROJECT_DIR$/intentdemo2" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
