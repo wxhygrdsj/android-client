@@ -3,17 +3,25 @@ package com.example.javatoandroid
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Message
 import android.util.Log
 import android.widget.ArrayAdapter
 import com.example.javatoandroid.model.ResultOV
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import kotlinx.android.synthetic.main.layout2.*
 import kotlinx.android.synthetic.main.listiewlayout.*
+import kotlinx.android.synthetic.main.listiewlayout.listView
+import okhttp3.FormBody
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import java.lang.Exception
+import kotlin.concurrent.thread
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout)
+        setContentView(R.layout.layout2)
         val myjson=intent.getStringExtra("myjson")
         Log.e("madad888888a",myjson.toString())
         val gson = Gson()
@@ -42,5 +50,20 @@ class MainActivity2 : AppCompatActivity() {
             }
             startActivity(intentfromlist)
         }
+        searchbtn.setOnClickListener {
+            val str=searchtext.text.toString()
+            val intentfromsearch=Intent(this,personalinformation::class.java)
+            for(s in allstudents){
+                val pattern=str.toRegex()
+                if(pattern.containsMatchIn(s.stuName.toString())){
+                    Log.e("Maina",s.toString())
+                    intentfromsearch.putExtra("student",gson.toJson(s))
+                    startActivity(intentfromsearch)
+                }
+            }
+
+        }
+
+
     }
 }
